@@ -1,0 +1,39 @@
+{
+  "name": "movie-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@reduxjs/toolkit": "^2.2.7",
+    "axios": "^1.7.4",
+    "i18next": "^23.14.0",
+    "i18next-resources-to-backend": "^1.2.1",
+    "next": "14.2.5",
+    "next-i18n-router": "^5.5.1",
+    "react": "^18",
+    "react-cookie": "^7.2.0",
+    "react-dom": "^18",
+    "react-drag-drop-files": "^2.3.10",
+    "react-hook-form": "^7.52.2",
+    "react-i18next": "^15.0.1",
+    "react-redux": "^9.1.2",
+    "sweetalert2": "^11.12.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
+  }
+}

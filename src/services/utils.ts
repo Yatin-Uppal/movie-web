@@ -1,11 +1,39 @@
+export const isClient = typeof window !== 'undefined';
+
 export const saveLocalStorage = (key: string, value: string) => {
-    localStorage.setItem(key, value)
+    if (isClient) {
+        localStorage.setItem(key, value)
+    }
 }
 
 export const getLocalStorage = (key: string) => {
-    return localStorage.getItem(key)
+    if (isClient) {
+        return localStorage.getItem(key)
+    }
+    return null;
 }
 
 export const clearLocalStorage = () => {
-    localStorage.removeItem("token");
+    if (isClient) {
+        localStorage.removeItem("token");
+    }
 }
+
+export const getToken = () => {
+    if (isClient) {
+        return localStorage.getItem('token');
+    }
+    return null;
+};
+
+export const setToken = (token: string) => {
+    if (isClient) {
+        localStorage.setItem('token', token);
+    }
+};
+
+export const removeToken = () => {
+    if (isClient) {
+        localStorage.removeItem('token');
+    }
+};

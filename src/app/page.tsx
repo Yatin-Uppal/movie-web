@@ -1,6 +1,10 @@
 import Login from "./[locale]/components/login";
+import RootLayout from "./layout";
 
 
 export default function Home() {
-  return <Login />
+  return <RootLayout>
+
+  <Login />
+  </RootLayout>
 }
